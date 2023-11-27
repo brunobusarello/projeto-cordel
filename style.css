@@ -38,10 +38,46 @@ header a:hover {
     text-decoration: underline;
 }
 
+main {
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 2px;
+    transform-style: preserve-3d;
+}
+
 main p {
     font-family: Sriracha, sans-serif;
     padding: 25px;
     font-size: 5vw;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    transform-style: inherit;
+}
+
+section::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    transform: translateZ(-1px) scale(1.5);
+}
+
+.img1::before {
+    background-image: url(imagens/background001.jpg);
+}
+
+.img2::before {
+    background-image: url(imagens/background002.jpg);
 }
 
 footer {
