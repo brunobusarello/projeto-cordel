@@ -12,15 +12,16 @@ header {
 }
 header > h1 {
     font-family: 'Passion One', cursive;
-    font-size: 5vw;
+    font-size: 7.5vw;
     color: white;
     padding: 20px;
     text-align: center;
+    font-variant: small-caps;
 }
 header > p {
     color: white;
     text-align: center;
-    padding: 0px 10px 10px 10px;
+    padding: 0px 10px 20px 10px;
 }
 header a {
     text-decoration: none;
@@ -30,11 +31,31 @@ header a {
 header a:hover {
     text-decoration: underline;
 }
-main p {
-    font-family: Sriracha, sans-serif;
-    padding: 25px;
-    font-size: 5vw;
+
+section {
+    padding: 7.5vh 0px 7.5vh 7.5vw;
+    font-size: 2.5vw;
+    line-height: 2em;
 }
+
+section > p {
+    font-family: Sriracha, sans-serif;
+}
+
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    background-color: blanchedalmond;
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.185);
+    max-width: 600px;
+}
+
 footer {
     background-color: black;
     color: white;
